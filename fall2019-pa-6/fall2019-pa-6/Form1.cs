@@ -10,11 +10,30 @@ using System.Windows.Forms;
 
 namespace fall2019_pa_6
 {
-    public partial class Form1 : Form
+    public partial class formCWID : Form
     {
-        public Form1()
+        public formCWID()
         {
             InitializeComponent();
+        }
+
+        private void buttonClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            formMain myForm = new formMain(textCWID.Text);
+            if(myForm.ShowDialog() == DialogResult.OK)
+            {
+                
+            }
+            else
+            {
+                this.Close();
+            }
         }
     }
 }
