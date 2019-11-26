@@ -24,5 +24,10 @@ namespace fall2019_pa_6
         {
 
         }
+
+        private void buttonClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
