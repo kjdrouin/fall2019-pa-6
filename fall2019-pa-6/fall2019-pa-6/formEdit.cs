@@ -40,5 +40,28 @@ namespace fall2019_pa_6
                 pictureCover.Load(myBook.cover);
             }
         }
+
+        private void ButtonClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void ButtonSave_Click(object sender, EventArgs e)
+        {
+            myBook.title = textTitle.Text;
+            myBook.author = textAuthor.Text;
+            myBook.genre = textGenre.Text;
+            myBook.copies = int.Parse(textCopies.Text);
+            myBook.length = int.Parse(textLength.Text);
+            myBook.isbn = textISBN.Text;
+            myBook.cover = textCover.Text;
+            myBook.cwid = cwid;
+
+            BookFile.SaveBook(myBook, cwid, mode);
+
+            MessageBox.Show("Content Saved", "Saved", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            this.Close();
+        }
     }
 }

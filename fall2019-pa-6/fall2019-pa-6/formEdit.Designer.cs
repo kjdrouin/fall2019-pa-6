@@ -176,6 +176,7 @@
             this.buttonSave.TabIndex = 27;
             this.buttonSave.Text = "Save";
             this.buttonSave.UseVisualStyleBackColor = true;
+            this.buttonSave.Click += new System.EventHandler(this.ButtonSave_Click);
             // 
             // buttonClose
             // 
@@ -185,6 +186,7 @@
             this.buttonClose.TabIndex = 28;
             this.buttonClose.Text = "Close";
             this.buttonClose.UseVisualStyleBackColor = true;
+            this.buttonClose.Click += new System.EventHandler(this.ButtonClose_Click);
             // 
             // formEdit
             // 
