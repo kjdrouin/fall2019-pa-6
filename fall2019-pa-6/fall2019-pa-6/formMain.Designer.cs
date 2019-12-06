@@ -155,10 +155,11 @@
             this.listBooks.Name = "listBooks";
             this.listBooks.Size = new System.Drawing.Size(281, 364);
             this.listBooks.TabIndex = 12;
+            this.listBooks.SelectedIndexChanged += new System.EventHandler(this.ListBooks_SelectedIndexChanged);
             // 
             // pictureCover
             // 
-            this.pictureCover.Location = new System.Drawing.Point(578, 58);
+            this.pictureCover.Location = new System.Drawing.Point(578, 35);
             this.pictureCover.Name = "pictureCover";
             this.pictureCover.Size = new System.Drawing.Size(228, 277);
             this.pictureCover.TabIndex = 13;
@@ -172,6 +173,7 @@
             this.buttonRent.TabIndex = 14;
             this.buttonRent.Text = "Rent";
             this.buttonRent.UseVisualStyleBackColor = true;
+            this.buttonRent.Click += new System.EventHandler(this.ButtonRent_Click);
             // 
             // buttonReturn
             // 
@@ -181,6 +183,7 @@
             this.buttonReturn.TabIndex = 15;
             this.buttonReturn.Text = "Return";
             this.buttonReturn.UseVisualStyleBackColor = true;
+            this.buttonReturn.Click += new System.EventHandler(this.ButtonReturn_Click);
             // 
             // buttonNew
             // 
@@ -208,6 +211,7 @@
             this.buttonDelete.TabIndex = 18;
             this.buttonDelete.Text = "Delete";
             this.buttonDelete.UseVisualStyleBackColor = true;
+            this.buttonDelete.Click += new System.EventHandler(this.ButtonDelete_Click);
             // 
             // buttonClose
             // 
@@ -223,7 +227,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(899, 646);
+            this.ClientSize = new System.Drawing.Size(831, 524);
             this.Controls.Add(this.buttonClose);
             this.Controls.Add(this.buttonDelete);
             this.Controls.Add(this.buttonEdit);

@@ -13,8 +13,6 @@ namespace fall2019_pa_6
     {
         public static List<Book> GetAllBooks(string cwid)
         {
-            //test push
-
             //URL
             string url = @"http://lucas-swami-api.herokuapp.com/books/" + cwid;
 
@@ -30,9 +28,6 @@ namespace fall2019_pa_6
 
                 return myBooks;
             }
-
-
-
         }
 
         public static void SaveBook(Book myBook, string cwid, string mode)
