@@ -193,6 +193,7 @@
             this.buttonNew.TabIndex = 16;
             this.buttonNew.Text = "New";
             this.buttonNew.UseVisualStyleBackColor = true;
+            this.buttonNew.Click += new System.EventHandler(this.ButtonNew_Click);
             // 
             // buttonEdit
             // 
@@ -202,6 +203,7 @@
             this.buttonEdit.TabIndex = 17;
             this.buttonEdit.Text = "Edit";
             this.buttonEdit.UseVisualStyleBackColor = true;
+            this.buttonEdit.Click += new System.EventHandler(this.ButtonEdit_Click);
             // 
             // buttonDelete
             // 

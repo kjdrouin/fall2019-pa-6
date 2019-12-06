@@ -89,5 +89,35 @@ namespace fall2019_pa_6
                 LoadList();
             }
         }
+
+        private void ButtonEdit_Click(object sender, EventArgs e)
+        {
+            Book myBook = (Book)listBooks.SelectedItem;
+            formEdit myForm = new formEdit(myBook, "edit", cwid);
+
+            if (myForm.ShowDialog() == DialogResult.OK)
+            {
+
+            }
+            else
+            {
+                LoadList();
+            }
+        }
+
+        private void ButtonNew_Click(object sender, EventArgs e)
+        {
+            Book myBook = new Book();
+            formEdit myForm = new formEdit(myBook, "new", cwid);
+
+            if (myForm.ShowDialog() == DialogResult.OK)
+            {
+
+            }
+            else
+            {
+                LoadList();
+            }
+        }
     }
 }
