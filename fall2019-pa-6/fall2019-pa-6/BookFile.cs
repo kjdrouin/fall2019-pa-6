@@ -7,7 +7,7 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System.Net.Http;
 
-namespace Book_App
+namespace fall2019_pa_6
 {
     class BookFile
     {
